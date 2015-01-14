@@ -11,8 +11,9 @@
 
 using namespace std;
 
-int main() {
+int main(int argc, char *argv[]) {
+    Employee newEmployee;
     cout << "Welcome to your first Object-Oriented Program\nEmployee Class 247C, Week 2 Lab\n";
     cout << "Name: Kim Merino\n";
-    
+    newEmployee.getFirstName();
 } // end of main

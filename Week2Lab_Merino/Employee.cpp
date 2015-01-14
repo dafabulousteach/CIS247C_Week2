@@ -24,7 +24,8 @@ Employee::Employee()
 
 //deconstructor
 Employee::~Employee()
-{}
+{
+}
 
 // Public Access Method Definitions
 double calculatePay(){
@@ -38,8 +39,10 @@ void displayEmployee(){
 }
 
 string Employee::getFirstName(){
-    cout << "Please enter your first name: ";
-    return 0;
+    string message;
+    message = "Please enter your first name: ";
+    cout << "Please enter your first name";
+    return message;
 }
 
 string setFirstName(string first){
