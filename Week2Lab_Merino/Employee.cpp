@@ -5,12 +5,13 @@
 //  Created by Big Brother on 1/13/15.
 //  Copyright (c) 2015 CIS247C. All rights reserved.
 //
-
+#ifndef Week2Lab_Merino_Employee_h
+#define Week2Lab_Merino_Employee_h
 #include "Employee.h"
 #include <iostream>
 #include <string>
 #include <iomanip>
-
+#endif
 using namespace std;
 
 Employee::Employee()
@@ -22,8 +23,8 @@ Employee::Employee()
 } // end of default constructor
 
 //deconstructor
-Employee::~Employee()
-{}
+//Employee::~Employee()
+//{}
 
 // Public Access Method Definitions
 double calculatePay(){

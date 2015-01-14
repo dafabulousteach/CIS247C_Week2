@@ -12,10 +12,7 @@
 using namespace std;
 
 int main() {
-    
     cout << "Welcome to your first Object-Oriented Program\nEmployee Class 247C, Week 2 Lab\n";
     cout << "Name: Kim Merino\n";
-    
-    
     
 } // end of main
