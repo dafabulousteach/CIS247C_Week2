@@ -23,8 +23,8 @@ Employee::Employee()
 } // end of default constructor
 
 //deconstructor
-//Employee::~Employee()
-//{}
+Employee::~Employee()
+{}
 
 // Public Access Method Definitions
 double calculatePay(){
