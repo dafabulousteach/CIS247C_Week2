@@ -6,12 +6,11 @@
 //  Copyright (c) 2015 CIS247C. All rights reserved.
 //
 
-#ifndef Week2Lab_Merino_Employee_h
-#define Week2Lab_Merino_Employee_h
-#include <string>
-#include <iostream>
-
-#endif
+//#ifndef Week2Lab_Merino_Employee_h
+//#define Week2Lab_Merino_Employee_h
+#include<string>
+#include<iostream>
+//#endif
 
 using namespace std;
 

@@ -25,9 +25,9 @@
 
 /* Begin PBXFileReference section */
 		653F436A1A66524C003364A3 /* Week2Lab_Merino */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Week2Lab_Merino; sourceTree = BUILT_PRODUCTS_DIR; };
-		653F436D1A66524C003364A3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		653F43751A66556D003364A3 /* Employee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
-		653F43761A665700003364A3 /* Employee.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Employee.cpp; sourceTree = "<group>"; };
+		653F436D1A66524C003364A3 /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		653F43751A66556D003364A3 /* Employee.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = Employee.h; sourceTree = "<group>"; };
+		653F43761A665700003364A3 /* Employee.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = Employee.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
