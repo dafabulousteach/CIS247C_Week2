@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		653F436E1A66524C003364A3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 653F436D1A66524C003364A3 /* main.cpp */; };
+		653F43771A665700003364A3 /* Employee.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 653F43761A665700003364A3 /* Employee.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		653F436A1A66524C003364A3 /* Week2Lab_Merino */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Week2Lab_Merino; sourceTree = BUILT_PRODUCTS_DIR; };
 		653F436D1A66524C003364A3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		653F43751A66556D003364A3 /* Employee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		653F43761A665700003364A3 /* Employee.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Employee.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				653F436D1A66524C003364A3 /* main.cpp */,
+				653F43751A66556D003364A3 /* Employee.h */,
+				653F43761A665700003364A3 /* Employee.cpp */,
 			);
 			path = Week2Lab_Merino;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				653F436E1A66524C003364A3 /* main.cpp in Sources */,
+				653F43771A665700003364A3 /* Employee.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +215,7 @@
 		653F43731A66524C003364A3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"MTL_ENABLE_DEBUG_INFO[arch=*]" = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

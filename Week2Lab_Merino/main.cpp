@@ -1,15 +1,21 @@
-//
-//  main.cpp
-//  Week2Lab_Merino
-//
-//  Created by Big Brother on 1/13/15.
-//  Copyright (c) 2015 CIS247C. All rights reserved.
-//
+/* CIS 247C
+ * January 12, 2015
+ * Kim Merino
+ * Lab 2 Week 2
+ * Program Description: This program accepts input from an employee and displays the informtion entered.
+ */
 
+#include "Employee.h"
 #include <iostream>
+#include <string>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
-}
+using namespace std;
+
+int main() {
+    
+    cout << "Welcome to your first Object-Oriented Program\nEmployee Class 247C, Week 2 Lab\n";
+    cout << "Name: Kim Merino\n";
+    
+    
+    
+} // end of main
