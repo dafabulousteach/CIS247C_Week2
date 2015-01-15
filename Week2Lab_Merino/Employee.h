@@ -6,11 +6,8 @@
  * Program Description: This program accepts input from an employee and displays the informtion entered.
  */
 
-
-
 #include<string>
 #include<iostream>
-//#endif
 
 using namespace std;
 
@@ -26,15 +23,15 @@ public:
     double calculatePay();
     void displayEmployee();
     string getFirstName();
-    string setFirstName(string first);
+    void setFirstName(); // changed this from string to void
     string getLastName(string last);
-    string setLastName();
-    char getGender();
-    char setGender(char gen);
-    int getDependents();
-    void setDependents(int dep);
-    double getAnnualSalary();
-    double setAnnualSalary(double salary);
+    void setLastName();
+    char getGender(char gen);
+    void setGender();
+    int getDependents(int dep);
+    void setDependents();
+    double getAnnualSalary(double salary);
+    void setAnnualSalary();
     
     // private members
 private:

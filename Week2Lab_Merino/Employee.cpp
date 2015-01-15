@@ -42,49 +42,57 @@ void Employee::displayEmployee(){
     
 }
 
-string Employee::getFirstName(){
-    cout << "Please enter your first name: \n";
-    getline(cin, firstName);
+string Employee::getFirstName(){ // retrieves the stored attribute for first name
     
-    return firstName; //this was needed to avoid an error message of EXC_BAD_ACCESS
+    return this->firstName;
 }
 
-string Employee::setFirstName(string first){
-    first = firstName;
-    cout << "Your first name is: \n" + first;
-    return 0;
+void Employee::setFirstName(){ // modifies the value of first name
+    
+    cout << "Please enter your first name: ";
+    getline(cin, firstName);
 }
 
 string Employee::getLastName(string last){
-    return 0;
-}
-
-string Employee::setLastName(){
-    return 0;
-}
-
-char Employee::getGender(){
-    return 0;
-}
-
-char Employee::setGender(char gen){
-    return 0;
-}
-
-int Employee::getDependents(){
     
-    //return dependents;
-    return 0;
+    return this -> lastName;
 }
 
-void Employee::setDependents(int dep){
-    //int dep = dependents;
+void Employee::setLastName(){
+    
+    cout << "Please enter your last name: ";
+    getline(cin, lastName);
 }
 
-double Employee::getAnnualSalary(){
-    return 0;
+char Employee::getGender(char gen){
+    
+    return gender[0];
 }
 
-double Employee::setAnnualSalary(double salary){
-    return 0;
+void Employee::setGender(){
+    
+    cout << "Please enter your gender: ";
+    cin >> gender;
+}
+
+int Employee::getDependents(int dep){
+    
+    return dependents;
+}
+
+void Employee::setDependents(){
+    
+    cout << "Please enter your Dependents: ";
+    cin >> dependents;
+}
+
+double Employee::getAnnualSalary(double salary){
+    
+    return annualSalary;
+}
+
+void Employee::setAnnualSalary(){
+    
+    cout << "Please enter your Annual Salary: ";
+    cin >> annualSalary;
 }
