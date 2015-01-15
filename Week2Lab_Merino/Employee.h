@@ -1,13 +1,13 @@
-//
-//  Employee.h
-//  Week2Lab_Merino
-//
-//  Created by Big Brother on 1/13/15.
-//  Copyright (c) 2015 CIS247C. All rights reserved.
-//
+/* CIS 247C
+ * January 12, 2015
+ * Kim Merino
+ * Lab 2 Week 2
+ * Employee Header File
+ * Program Description: This program accepts input from an employee and displays the informtion entered.
+ */
 
-//#ifndef Week2Lab_Merino_Employee_h
-//#define Week2Lab_Merino_Employee_h
+
+
 #include<string>
 #include<iostream>
 //#endif
@@ -19,19 +19,20 @@ class Employee
 public:
     
     Employee();
+    Employee(string, string, char, int, double);
     ~Employee();
     
     // public access methods
     double calculatePay();
     void displayEmployee();
     string getFirstName();
-    string setFirstName(); // might take in arguments
+    string setFirstName(string first);
     string getLastName(string last);
     string setLastName();
     char getGender();
     char setGender(char gen);
     int getDependents();
-    int setDependents(int dep);
+    void setDependents(int dep);
     double getAnnualSalary();
     double setAnnualSalary(double salary);
     

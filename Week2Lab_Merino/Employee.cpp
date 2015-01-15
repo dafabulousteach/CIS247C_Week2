@@ -1,10 +1,10 @@
-//
-//  Employee.cpp
-//  Week2Lab_Merino
-//
-//  Created by Big Brother on 1/13/15.
-//  Copyright (c) 2015 CIS247C. All rights reserved.
-//
+/* CIS 247C
+ * January 12, 2015
+ * Kim Merino
+ * Lab 2 Week 2
+ * Employee Class Definitions
+ * Program Description: This program accepts input from an employee and displays the informtion entered.
+ */
 #ifndef Week2Lab_Merino_Employee_h
 #define Week2Lab_Merino_Employee_h
 #include "Employee.h"
@@ -22,6 +22,10 @@ Employee::Employee()
     this -> annualSalary=20000;
 } // end of default constructor
 
+Employee::Employee(string first, string last, char gen, int dep, double salary){
+    
+}
+
 //deconstructor
 Employee::~Employee()
 {
@@ -34,49 +38,53 @@ double calculatePay(){
     return 0;
 }
 
-void displayEmployee(){
+void Employee::displayEmployee(){
     
 }
 
 string Employee::getFirstName(){
-    string message;
-    message = "Please enter your first name: ";
-    cout << "Please enter your first name";
-    return message;
+    cout << "Please enter your first name: \n";
+    getline(cin, firstName);
+    
+    return firstName; //this was needed to avoid an error message of EXC_BAD_ACCESS
 }
 
-string setFirstName(string first){
+string Employee::setFirstName(string first){
+    first = firstName;
+    cout << "Your first name is: \n" + first;
     return 0;
 }
 
-string getLastName(string last){
+string Employee::getLastName(string last){
     return 0;
 }
 
-string setLastName(){
+string Employee::setLastName(){
     return 0;
 }
 
-char getGender(){
+char Employee::getGender(){
     return 0;
 }
 
-char setGender(char gen){
+char Employee::setGender(char gen){
     return 0;
 }
 
-int getDependents(){
+int Employee::getDependents(){
+    
+    //return dependents;
     return 0;
 }
 
-int setDependents(int dep){
+void Employee::setDependents(int dep){
+    //int dep = dependents;
+}
+
+double Employee::getAnnualSalary(){
     return 0;
 }
 
-double getAnnualSalary(){
-    return 0;
-}
-
-double setAnnualSalary(double salary){
+double Employee::setAnnualSalary(double salary){
     return 0;
 }
