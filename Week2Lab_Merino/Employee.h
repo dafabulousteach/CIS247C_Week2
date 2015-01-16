@@ -3,7 +3,7 @@
  * Kim Merino
  * Lab 2 Week 2
  * Employee Header File
- * Program Description: This program accepts input from an employee and displays the informtion entered.
+ * Program Description: This program accepts input from an employee and displays the information entered.
  */
 
 #include<string>
@@ -16,7 +16,7 @@ class Employee
 public:
     
     Employee();
-    //Employee(string); // string, char, int, double
+    Employee(string first, string last, char gen, int dep, double salary);
     ~Employee();
     
     // public access methods

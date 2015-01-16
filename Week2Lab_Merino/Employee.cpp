@@ -17,19 +17,22 @@ using namespace std;
 Employee::Employee()
 {
     this -> firstName="not given";
-    strncpy(gender, "U", 1); // Needed to assign it with strncpy because I received an error trying to use this -> gender
+    strncpy(gender, "U", 1);
     this -> dependents=0;
     this -> annualSalary=20000;
 } // end of default constructor
 
-/*Employee::Employee(string first){
-    
-}*/
+Employee::Employee(string first, string last, char gen, int dep, double salary){
+    firstName = first;
+    lastName = last;
+    gender[0] = gen;
+    dependents = dep;
+    annualSalary = salary;
+}
 
 //deconstructor
 Employee::~Employee()
-{
-}
+{}
 
 // Public Access Method Definitions
 
@@ -88,14 +91,13 @@ double Employee::calculatePay(){
 }
 
 void Employee::displayEmployee(){
+    cout << "Employee Information\n";
     cout << "-------------------------------------------------\n";
     cout << "Name:\t" << firstName << " " << lastName + "\n";
     cout << "Gender:\t" << gender << "\n";
     cout << "Dependents:\t" << dependents << "\n";
     cout << "Annual Salary:\t" << setprecision(2) << showpoint << fixed << annualSalary << "\n";
-    //cout << "Weekly Salary:\t" << annualSalary << "\n";
-    
-    
+    cout << "Weekly Salary:\t" << calculatePay() << "\n";
 }
 
 

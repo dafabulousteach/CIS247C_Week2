@@ -13,7 +13,8 @@
 using namespace std;
 
 int main(int argc, char *argv[]) {
-    Employee e1, e2;
+    Employee e1;
+    
     cout << "Welcome to your first Object-Oriented Program\nEmployee Class 247C, Week 2 Lab\n";
     cout << "Name: Kim Merino\n";
 
@@ -25,14 +26,9 @@ int main(int argc, char *argv[]) {
     e1.setDependents(0);
     e1.setAnnualSalary(0);
     e1.displayEmployee();
-    /*
-    //Employee #2 User Input
-    cout << "***************** Employee 2 ****************";
-    e2.setFirstName(" ");
-    e2.setLastName(" ");
-    e2.setGender(0);
-    e2.setDependents(0);
-    e2.setAnnualSalary(0);
+    cout << "***************** Employee 2 ****************\n";
+     // Employee #2
+    Employee e2("Mary", "Noia", 'F', 2, 150000);
     e2.displayEmployee();
-    */
+    cout << "The end of the CIS 247C Week 2 iLab\n";
 } // end of main
