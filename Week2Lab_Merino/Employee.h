@@ -16,22 +16,22 @@ class Employee
 public:
     
     Employee();
-    Employee(string, string, char, int, double);
+    //Employee(string); // string, char, int, double
     ~Employee();
     
     // public access methods
     double calculatePay();
     void displayEmployee();
     string getFirstName();
-    void setFirstName(); // changed this from string to void
-    string getLastName(string last);
-    void setLastName();
-    char getGender(char gen);
-    void setGender();
-    int getDependents(int dep);
-    void setDependents();
-    double getAnnualSalary(double salary);
-    void setAnnualSalary();
+    void setFirstName(string first); // changed this from string to void
+    string getLastName();
+    void setLastName(string last);
+    char getGender();
+    void setGender(char gen);
+    int getDependents();
+    void setDependents(int dep);
+    double getAnnualSalary();
+    void setAnnualSalary(double salary);
     
     // private members
 private:

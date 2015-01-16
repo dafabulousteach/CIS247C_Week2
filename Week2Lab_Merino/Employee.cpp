@@ -22,9 +22,9 @@ Employee::Employee()
     this -> annualSalary=20000;
 } // end of default constructor
 
-Employee::Employee(string first, string last, char gen, int dep, double salary){
+/*Employee::Employee(string first){
     
-}
+}*/
 
 //deconstructor
 Employee::~Employee()
@@ -32,67 +32,71 @@ Employee::~Employee()
 }
 
 // Public Access Method Definitions
-double calculatePay(){
-    //double value;
-    //value = annualSalary/52;
-    return 0;
-}
 
-void Employee::displayEmployee(){
-    
-}
 
-string Employee::getFirstName(){ // retrieves the stored attribute for first name
-    
-    return this->firstName;
-}
-
-void Employee::setFirstName(){ // modifies the value of first name
+void Employee::setFirstName(string first){
     
     cout << "Please enter your first name: ";
     getline(cin, firstName);
-}
-
-string Employee::getLastName(string last){
     
-    return this -> lastName;
+}
+string Employee::getFirstName(){
+    return this -> firstName;
 }
 
-void Employee::setLastName(){
+void Employee::setLastName(string last){
     
     cout << "Please enter your last name: ";
     getline(cin, lastName);
 }
-
-char Employee::getGender(char gen){
+string Employee::getLastName(){
     
-    return gender[0];
+    return this -> lastName;
 }
-
-void Employee::setGender(){
+void Employee::setGender(char gen){
     
     cout << "Please enter your gender: ";
     cin >> gender;
 }
 
-int Employee::getDependents(int dep){
+char Employee::getGender(){
     
-    return dependents;
+    return gender[0];
 }
 
-void Employee::setDependents(){
+void Employee::setDependents(int dep){
     
     cout << "Please enter your Dependents: ";
     cin >> dependents;
 }
-
-double Employee::getAnnualSalary(double salary){
+int Employee::getDependents(){
     
-    return annualSalary;
+    return dependents;
 }
-
-void Employee::setAnnualSalary(){
+void Employee::setAnnualSalary(double salary){
     
     cout << "Please enter your Annual Salary: ";
     cin >> annualSalary;
 }
+double Employee::getAnnualSalary(){
+    
+    return annualSalary;
+}
+double Employee::calculatePay(){
+    
+    return annualSalary/52;
+}
+
+void Employee::displayEmployee(){
+    cout << "-------------------------------------------------\n";
+    cout << "Name:\t" << firstName << " " << lastName + "\n";
+    cout << "Gender:\t" << gender << "\n";
+    cout << "Dependents:\t" << dependents << "\n";
+    cout << "Annual Salary:\t" << setprecision(2) << showpoint << fixed << annualSalary << "\n";
+    //cout << "Weekly Salary:\t" << annualSalary << "\n";
+    
+    
+}
+
+
+
